@@ -87,6 +87,28 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "ModuleForm",
+                    "title": "Type your Module Information",
+                    "formFieldList": [
+                    {
+                        "id":   "title",
+                        "type": "text",
+                        "name": { default: "Titel" },
+                        "required": true,
+                        "width": 2
+                    },
+                    {
+                        "id": "description",
+                        "type": "text",
+                        "name": { default: "Text" },
+                        "newRow": true,
+                        "maxLength": 4000,
+                        "height": 4,
+                        "width": 2
+                    }
+                    ]
+                    }
             ],
             "pageList": [
                 {
@@ -107,6 +129,14 @@ export class GuiModel {
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "Module" },
+                            "icon": "fa-file-alt",
+                            "color": "wet-asphalt",
+                            "page": "modulePage",
+                            "width": 2,
+                            },
                     ]
                 },
                 {
@@ -138,6 +168,27 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "modulePage",
+                    "elementList": [
+                    {
+                    "type": "backbutton",
+                    },
+                    {
+                    "type": "newButton",
+                    "name": { default: "Neues Modul" },
+                    "icon": "fa-user",
+                    "color": "green",
+                    "width": 2,
+                    "form" : {
+                    "form" : "ModuleForm"
+                    }
+                    },
+                    
+                    ]
+                    
+                    },
+                    
             ]
         }
     };
