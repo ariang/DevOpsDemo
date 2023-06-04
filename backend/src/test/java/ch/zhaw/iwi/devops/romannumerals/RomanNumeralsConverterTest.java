@@ -59,5 +59,10 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("C",romanNumeralsConverter.convertToRoman(100));
     }
+    @Test
+    public void romannumeralsConverter500() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("D",romanNumeralsConverter.convertToRoman(500));
+    }
 
 }
