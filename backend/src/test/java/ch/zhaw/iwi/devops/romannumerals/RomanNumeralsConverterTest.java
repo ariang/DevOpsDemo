@@ -49,5 +49,10 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("XXI",romanNumeralsConverter.convertToRoman(21));
     }
+    @Test
+    public void romannumeralsConverter50() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("L",romanNumeralsConverter.convertToRoman(50));
+    }
 
 }
