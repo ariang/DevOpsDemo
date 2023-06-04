@@ -6,7 +6,7 @@ public class RomanNumeralsConverter {
 
     public String convertToRoman(int value) {
         
-        LinkedHashMap<String, Integer> romanNumerals = new LinkedHashMap<String, Integer>();  
+        LinkedHashMap<String, Integer> romanNumerals = new LinkedHashMap<>();  
         //storing roman letters and corresponding decimal values in HashMap  
         romanNumerals.put("M", 1000);  
         romanNumerals.put("CM", 900);  
