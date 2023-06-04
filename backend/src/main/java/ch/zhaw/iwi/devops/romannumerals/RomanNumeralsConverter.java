@@ -3,6 +3,11 @@ package ch.zhaw.iwi.devops.romannumerals;
 public class RomanNumeralsConverter {
     
     public String convertToRoman(int value) {
-        return "test";
+        if(value==1){
+            return "I";
+        }
+        else {
+            return "value not known";
+        }
         }
 }
