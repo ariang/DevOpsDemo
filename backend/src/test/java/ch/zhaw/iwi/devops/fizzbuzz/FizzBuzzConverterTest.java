@@ -37,6 +37,15 @@ public class FizzBuzzConverterTest {
         Assertions.assertEquals("Fizz", fizzBuzz.convert(6));
     }
 
+    //added by Arian
+    @Test
+    public void fizzBuzzConvertor9() {
+
+        FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+
+        Assertions.assertEquals("Fizz", fizzBuzz.convert(9));
+    }
+
     @Test
     void fizzBuzzConvertorMultiplesOfSeven() {
 
