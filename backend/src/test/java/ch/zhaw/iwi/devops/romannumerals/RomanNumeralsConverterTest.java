@@ -22,4 +22,9 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("III",romanNumeralsConverter.convertToRoman(3));
     }
+    @Test
+    public void romannumeralsConverter4() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("IV",romanNumeralsConverter.convertToRoman(4));
+    }
 }
