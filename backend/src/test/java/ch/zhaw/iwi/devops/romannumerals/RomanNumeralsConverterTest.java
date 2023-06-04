@@ -37,4 +37,11 @@ public class RomanNumeralsConverterTest {
         RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
         assertEquals("IX",romanNumeralsConverter.convertToRoman(9));
     }
+    @Test
+    public void romannumeralsConverterMultipleNumbers() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("CMXCIX",romanNumeralsConverter.convertToRoman(999));
+        assertEquals("MV",romanNumeralsConverter.convertToRoman(1005));
+        assertEquals("CCC",romanNumeralsConverter.convertToRoman(300));
+    }
 }
