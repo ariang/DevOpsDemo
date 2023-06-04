@@ -44,4 +44,10 @@ public class RomanNumeralsConverterTest {
         assertEquals("MV",romanNumeralsConverter.convertToRoman(1005));
         assertEquals("CCC",romanNumeralsConverter.convertToRoman(300));
     }
+    @Test
+    public void romannumeralsConverter21() {
+        RomanNumeralsConverter romanNumeralsConverter = new RomanNumeralsConverter();
+        assertEquals("XXI",romanNumeralsConverter.convertToRoman(21));
+    }
+
 }
